@@ -1,0 +1,11 @@
+name: Echo Name on Push
+on:
+  push:
+    branches:
+      - master
+jobs:
+  echo-name:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo My Name
+        run: echo "Vikram Singh"
